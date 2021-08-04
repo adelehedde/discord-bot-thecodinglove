@@ -1,0 +1,22 @@
+{
+  "name": "discord-bot-thecodinglove",
+  "version": "1.0.0",
+  "description": "Discord bot to send random posts from thecodinglove",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "bot",
+    "discord",
+    "thecodinglove",
+    "lesjoiesducode"
+  ],
+  "author": "adelehedde",
+  "license": "Apache License 2.0",
+  "dependencies": {
+    "axios": "0.21.1",
+    "cheerio": "1.0.0-rc.10"
+  }
+}
