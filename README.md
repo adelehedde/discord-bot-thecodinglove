@@ -47,5 +47,16 @@ This is up to you !
 
 You can simply schedule it with a cron job :
 ```
-15 9 * * 1-5 DISCORD_WEBHOOK_URL=<discord_webhook_url> node src/index.js > /var/log/discord-bot-thecodinglove/thecodinglove_$(date +\%Y\%m\%d_\%H:\%M:\%S\%z).log 2>&1
+15 9 * * 1-5 DISCORD_WEBHOOK_URL=<discord_webhook_url> node discord-bot-thecodinglove/src/index.js > /var/log/discord-bot-thecodinglove/thecodinglove_$(date +\%Y\%m\%d_\%H:\%M:\%S\%z).log 2>&1
+```
+
+### Docker
+
+```
+# Build the docker image
+docker build -t discord-bot-thecodinglove .
+# Run the container
+docker run --rm  -e DISCORD_WEBHOOK_URL=<discord_webhook_url> discord-bot-thecodinglove
+# Run the container interactively
+docker run -it --rm discord-bot-thecodinglove bash
 ```
