@@ -60,3 +60,6 @@ docker run --rm  -e DISCORD_WEBHOOK_URL=<discord_webhook_url> discord-bot-thecod
 # Run the container interactively
 docker run -it --rm discord-bot-thecodinglove bash
 ```
+
+Available on [Docker Hub](https://hub.docker.com/r/adelehedde/discord-bot-thecodinglove)
+
